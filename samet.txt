@@ -83,3 +83,5 @@ git clone #for downtoading for whole repo
 ssh-keygen
 eval $(ssh-agent -s)
 ssh-add ~/.ssh/id_rsa.pub
+
+#adding remote repo
