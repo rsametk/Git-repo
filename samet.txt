@@ -1,0 +1,85 @@
+General Syntax:
+
+git config --global user.name "Your Name"
+git config --global user.email "you@someplace.com"
+Example using course author's information:
+
+git config --global user.name "Jason Taylor"
+git config --global user.email "jason@jasongtaylor.com"
+Listing All Global Configuration Settings
+git config --global --list
+
+ssh-keygen -t rsa -C "jason@jasongtaylor.com"
+ssh -T git@github.com
+
+git remote add origin https://<token>@github.com/rsametk/teketek.git
+git push --set-upstream origin main
+
+git clone <rep-address>
+
+git add .
+git status
+git commit -m "....."
+git push
+git reset HEAD file-name
+#will "unstage" the specified file from Git's staging area.
+git chechout -- file-name
+#will back out any changes made to the specified file and replace it with the version last committed in Git
+git log 
+git revert <log_id>
+#order of commit history
+git help log gives all information
+git log --online --graph ---decorate  --color
+#gives nice view of your commit history
+git rm file-name
+git mv file_name directory-name
+
+git branch -m main 
+#change the name of branch
+
+git config --global init.defaultBranch main 
+git remote -v 
+#show the remote repo
+
+git commit -am "staging and commiting comment with flag -am"
+git pull origin master
+git push origin master
+git push -u remote-name branch-name
+#The -u parameter is needed the first time you push a branch to the remote.
+
+git branch
+git clone <repo-url>
+#git has blame feature on the UI that you can check its detail 
+#.gitignore is the folder taht you can write the name of the folders to not push in the repo
+
+#branching 
+git chechout -b <branch name>
+git branch
+
+#changing commit messages
+git commit -m "Adding plines to reddme"
+git log --oneline
+07c5bc5 (HEAD -> master) Adding plines to reddme
+git commit --amend -m "Added lines to README.md"
+[master eaa69ce] Added lines to README.md
+git log --oneline
+eaa69ce (HEAD -> master) Added lines to README.md
+
+#checking the difference between comparing local and repo and stage
+git add -all
+git diff #compare changes with working and staging
+git diff --staged #compare changes with staging and repo
+git diff HEAD #compare changes with working and repo
+
+#compering two differen ones
+git log #get log id
+git diff ****** ****** #write the two different first six commit log id 
+
+#different of clone and pull
+git pull #for afew changes
+git clone #for downtoading for whole repo
+
+#generating SSH Key
+ssh-keygen
+eval $(ssh-agent -s)
+ssh-add ~/.ssh/id_rsa.pub
