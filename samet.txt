@@ -84,4 +84,6 @@ ssh-keygen
 eval $(ssh-agent -s)
 ssh-add ~/.ssh/id_rsa.pub
 
-#adding remote repo
+git show <id of commit>
+git show HEAD~2 #is the prevous two commit
+git annotate <file name> #show the line of file that written by the developer
